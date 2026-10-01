@@ -1,15 +1,15 @@
 call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': 'v0.0.82'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 Plug 'neovim/nvim-lspconfig'
-Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
+"Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'hrsh7th/nvim-cmp'
@@ -454,3 +454,7 @@ require("react-extract").setup()
 vim.keymap.set({ "v" }, "<Leader>re", require("react-extract").extract_to_new_file)
 vim.keymap.set({ "v" }, "<Leader>rc", require("react-extract").extract_to_current_file)
 EOF
+
+let g:java_ignore_markdown = 1
+
+
